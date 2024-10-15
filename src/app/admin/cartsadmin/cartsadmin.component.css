@@ -1,0 +1,23 @@
+  .data{
+    margin: 0;
+    
+  }
+.main{
+    border: 1px solid #ddd;
+}
+.recets{
+    margin: 50px 0;
+}
+.submit{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 100px;
+    position: relative;
+    top: 50px;
+    
+}
+.submit .btn{
+    width: 100px;
+    height: 40px;
+}

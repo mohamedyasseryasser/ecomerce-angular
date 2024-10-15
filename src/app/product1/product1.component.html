@@ -1,0 +1,16 @@
+
+<div class="product">
+    <img src="{{data.image}}" class="card-img-top" alt="...">
+    <div class="card-body" >
+      <h5 class="card-title">{{data.title}}</h5>
+      <p class="card-text"> {{data.description}}</p>
+      <p class="card-catogory ">{{data.category}}</p>
+      <button href="#" class="btn btn-primary" (click)="buy()" *ngIf="loading">add to cart</button>
+      <div class="buy" *ngIf="loading==false" >
+        <input  [(ngModel)]="inputValue" type="number">
+        <button class="btn btn-danger"(click)="add()">buy</button>
+      </div>
+      <span>{{data.price}} L.E </span>
+    </div>
+</div>
+ 

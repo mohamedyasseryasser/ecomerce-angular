@@ -1,0 +1,225 @@
+<div class="page">
+<div class="home">
+  <div class="container">
+    <div class="text">
+      <p>Trade-in-offer</p>
+      <h1>Super value deals</h1>
+      <h1>On all products</h1>
+      <p>save more with couporns & up to 70%o!!</p>
+      <a href="#" class="nav-link text-center">Shop Now</a>
+    </div>
+  </div>
+</div>
+<div class="our-cat">
+  <div class="container">
+    <div class="row g-3">
+      <div  class="cat col-lg-3 col-sm-6 col-6 text-center" >
+        <div class="child">
+          <div class="img1"></div>
+          <p value="electronics"  class="text1">electronics</p>
+        </div>
+      </div>
+      <div  value="jewelery" class="cat col-lg-3 col-sm-6 col-6 text-center">
+        <div class="child">
+          <div class="img2"></div>
+          <p class="text2">jewelery</p>
+        </div>
+      </div>
+      <div value="men's clothing" class="cat col-lg-3 col-sm-6 col-6 text-center">
+        <div class="child">
+          <div class="img3"></div>
+          <p class="text3">men's clothing</p>
+        </div>
+      </div>
+      <div value="women's clothing" class="cat col-lg-3 col-sm-6 col-6 text-center">
+        <div class="child">
+          <div class="img4"></div>
+          <p class="text4">women's clothing</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="feature-products">
+<div class="container">
+  <div class="head text-center">
+  <h1 class="products-title">feature products</h1>
+<p class="product-text">summer collection new modern design</p>
+</div>
+<div class="row">
+ <div class=" col-lg-3 col-6 text-center" *ngFor="let item of mensclothes">
+  <div class="product-content" (click)="productdetails(item)" >
+  <div class="image text-center"><img src="{{item.image}}" alt=""></div>
+  <p>adidas</p>
+  <p class="des">{{item.title}}</p>
+   <p>{{item.price}}$ </p>
+ </div>
+ </div>
+  </div>
+  <div class="row">
+    <div class=" col-lg-3 col-6 text-center" *ngFor="let item of jewelery" >
+      <div class="product-content" (click)="productdetails(item)">
+      <div class="image text-center"><img src="{{item.image}}" alt=""></div>
+      <p>adidas</p>
+      <p class="des">{{item.title}}</p>
+      <p>{{item.price}}$ </p>
+     </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="services">
+  <div class="container">
+  <div class="des text-center">
+  <h2 >repair services</h2>
+  <p class="d-inline">Up to</p>
+  <p class="d-inline">70% Off</p>
+  <p class="d-inline">- All t- Shirt & Accessories</p>
+</div>
+<button class="btn "> Explore More</button>
+  </div>
+</div>
+<div class="feature-products">
+  <div class="container">
+    <div class="head text-center">
+    <h1 class="products-title">new arrivals</h1>
+  <p class="product-text">summer collection new modern design</p>
+  </div>
+  <div class="row">
+   <div class=" col-lg-3 col-6 text-center" *ngFor="let item of womans">
+    <div class="product-content"  (click)="productdetails(item)">
+    <div class="image text-center"><img src="{{item.image}}" alt=""></div>
+    <p>adidas</p>
+    <p class="des">{{item.title}}</p>
+
+    <p>{{item.price}}$ </p>
+   </div>
+   </div>
+   <div class=" col-lg-3 col-6 text-center" *ngFor="let item of electronices">
+    <div class="product-content"  (click)="productdetails(item)">
+    <div class="image text-center"><img src="{{item.image}}" alt=""></div>
+    <p>adidas</p>
+    <p class="des">{{item.title}}</p>
+
+    <p>{{item.price}}$ </p>
+   </div>
+   </div>
+  </div>
+  </div>
+</div>
+<div class="offers">
+  <div class="container">
+    <div class="row">
+      <div class=" col-lg-6 col-6">
+        <div class="parent1">
+          <div class="content">
+        <p>crazy deals</p>
+        <h1>buy 1 get 1 free</h1>
+        <p>the best classic dress is on scale at cara</p>
+        <button class="btn">learn more</button>
+      </div>
+      </div>
+      </div>
+      <div class=" col-lg-6 col-6">
+        <div class="parent2">
+          <div class="content">
+        <p>spring/summer</p>
+        <h1>upcomming season</h1>
+        <p>the best classic dress is on scale at cara</p>
+        <button class="btn">collection</button>
+      </div>
+      </div>
+      </div>
+    </div>
+    <div class="row py-4">
+    <div class="col-lg-4 col-4 ">
+      <div class="box1">
+        <div class="cont">
+          <h2>SEASONAL SALE</h2>
+          <p>Winter Collection-50% Off</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-4">
+      <div class="box2">
+        <div class="cont">
+          <h2>NEW FOOTWEAR COLLECTION</h2>
+          <p>Spring/Summer 2022</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-4">
+      <div class="box3">
+        <div class="cont">
+          <h2>T-SHIRTS</h2>
+          <p>New Trendy Prices</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="newtext">
+<div class="container">
+  <div class="content row">
+    <div class="col-lg-6">
+    <h2>Sign Up Newletters</h2>
+    <p>Get E-mail Updates about our lotest shop and special offers</p>
+  </div>
+
+  <div class="form col-lg-6">
+  <input type="text" placeholder="your email address">
+  <button>Sign Up</button>
+  </div>
+  </div>
+</div>
+</div>
+
+<div class="footer">
+  <div class="container row">
+    <div class="col-lg-4">
+      <div class="contact">
+      <div class="icon"></div>
+      <h4>contact</h4>
+      <span>Address:</span><span>562</span>
+
+    </div>
+    </div>
+    <div class="col-lg-2">
+      <div class="about">
+        <h4></h4>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+      </div>
+    </div>
+    <div class="col-lg-2">
+      <div class="myaccount">
+        <h4></h4>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="installapp">
+        <h4></h4>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+ 

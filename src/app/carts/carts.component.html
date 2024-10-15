@@ -1,0 +1,46 @@
+<div class="carts">
+  <div class="container ">
+    <div>
+      <h1>shopping carts</h1>
+      <p>you have <span class="item"> {{local.length}} </span>item in cart</p>
+    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">name</th>
+          <th scope="col">price</th>
+          <th scope="col">quantity</th>
+          <th scope="col">total</th>
+          <th><button class="btn btn-danger" (click)="cleardata()">clear carts</button></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of local let i=index">
+          <td>{{item.item.title}}</td>
+          <td>{{item.item.price}}</td> 
+          <td>  
+            <div class="quantity">
+              <button class="btn btn-dark" (click)="minus(i)">*</button>
+              <input type="text" [(ngModel)]="item.quantity" >
+              <button class="btn btn-dark" (click)="plus(i)">*</button>
+            </div> 
+          </td>
+          <td>{{item.quantity * item.item.price}}</td>
+          <td><button class="btn btn-danger" (click)="delete(i)">delete</button>
+
+          </td>
+        </tr> 
+      </tbody>
+    </table>
+    <hr>
+    <div class="order">
+      <span class="total text-center">total: {{total}}: LE</span>
+      <span class="total text-center">total: {{total | uSDtoEGP | currency:'USD'}}</span>
+    <span><button class="btn btn-primary" (click)="getcart()">order now</button></span>
+  
+  </div>
+  
+  <div class="alert alert-success" *ngIf="success"><strong>well done</strong><p>your order is successfull send</p></div>
+  </div>
+ </div>
+

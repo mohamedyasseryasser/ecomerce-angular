@@ -1,0 +1,89 @@
+<div class="recets">
+<div class="container main">
+<form [formGroup]="formgroup">
+<div class="container row">
+<div class="container data col-lg-3  mt-5">
+  
+    <div class="mb-3">
+      <label for="dateInput" class="form-label">Date:Start</label>
+      <input type="date" formControlName="start" class="form-control" id="dateInput">
+    </div>
+</div>
+<div class="container data col-lg-3 mt-5">
+    <div class="mb-3">
+      <label for="dateInput" class="form-label">Date:End</label>
+      <input type="date" formControlName="end" class="form-control" id="dateInput">
+    </div>
+</div>
+<div class="col-lg-3 submit">
+  <button type="submit" class="btn btn-success" (click)="submit()">Apply</button>
+</div>
+</div>
+</form>
+<hr>
+<div class="carts">
+  <div class="container ">
+    <div>
+      <h1>shopping carts</h1>
+      <p>you have  item in cart</p>
+    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">data</th>
+          <th scope="col">quantity</th>
+          <th scope="col"></th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of local let i=index">
+          <td>{{item.date | date:'MMM/dd/yyyy' }}</td>
+          <td>
+            <div class="quantity">
+              <p>{{item.products.length}}</p>
+            </div>
+          </td>
+
+          <td><button class="btn btn-primary" (click)="deletedata(i + 1)">delete</button>
+          <button class="btn btn-danger" type="button"data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="view(i )">view</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div> 
+ </div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <table class="table">
+          <thead>
+            <tr> 
+               <th scope="col">name</th>
+              <th scope="col">price</th>
+              <th scope="col">quantity</th>
+              <th scope="col">total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of arr let i=index">
+             <td>{{item.title}}</td>
+            <td>{{item.price}}</td>
+            <td>{{products[i].quantity}}</td>
+            <td>{{item.price * products[i].quantity}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>

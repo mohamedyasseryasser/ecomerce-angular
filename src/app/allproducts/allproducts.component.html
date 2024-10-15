@@ -1,0 +1,15 @@
+
+<div class="width:100% allproduct">
+  <div class="container">
+ <app-select class="select" [data]="catlist" title="catogary" (selectbycat)="changes($event)"></app-select>
+<div class="container row text-center"  *ngIf="!loading">
+<div class="card col-lg-4" *ngFor="let item of user" style="width: 18rem;">
+<app-product1 [data]="item" (prodetails)="add($event)" ></app-product1>
+</div>
+</div>
+</div>
+</div>
+<div *ngIf="loading">
+  <app-loading></app-loading>
+</div>
+ 

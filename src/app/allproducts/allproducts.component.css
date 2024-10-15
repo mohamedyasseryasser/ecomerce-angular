@@ -1,0 +1,42 @@
+.card:hover{
+ transform: scale(1.1);
+  }
+.card{
+  cursor: pointer;
+  transition: all .3s;
+}
+ 
+.select {
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; 
+}
+
+.card {
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+
+
+.card img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "register": [
+    {
+      "fname": "mohamed",
+      "lname": "draz",
+      "email": "draz@gmail.com",
+      "password": "01278654604",
+      "id": 1
+    },
+    {
+      "fname": "mohamed",
+      "lname": "draz",
+      "email": "draz@gmail.com",
+      "password": "01278654604",
+      "id": 2
+    },
+    {
+      "fname": "dadsaewewq",
+      "lname": "eqwe",
+      "email": "mohamedyasseryasser7@gmail.com",
+      "password": "01278654604",
+      "id": 3
+    },
+    {
+      "fname": "das",
+      "lname": "qew",
+      "email": "ali@ds",
+      "password": "999",
+      "id": 4
+    },
+    {
+      "fname": "dsa",
+      "lname": "dsa",
+      "email": "sara@gmail.com",
+      "password": "sdadsa",
+      "id": 5
+    }
+  ],
+  "login": [
+    {
+      "email": "ali@ds",
+      "password": "999",
+      "id": "1",
+      "role": "user"
+    }
+  ],
+  "admin": [
+    {
+      "id": "1",
+      "email": "mohameddraz@gmail",
+      "password": "01278654604",
+      "role": "admin"
+    }
+  ]
+}

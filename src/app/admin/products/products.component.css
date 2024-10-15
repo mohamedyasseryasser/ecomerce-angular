@@ -1,0 +1,40 @@
+.products{
+    margin: 50px 0px;
+}
+.container{
+    border: 1px solid #ddd;
+    padding: 30px;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+
+.row{
+    position: relative;
+    left: 50%;
+    transform: translateX(-49%);
+}
+
+@media(max-width:765px){
+ td{
+    font-size: 11px;
+ }
+ img{
+    width: 80px;
+ }
+}
+@media(max-width:551px){
+    td{
+        font-size: 9px;
+     }
+     img{
+        width: 60px;
+     }
+     .products{
+        width: 100%;
+     }
+     .container{
+        width: 100%;
+     }
+}

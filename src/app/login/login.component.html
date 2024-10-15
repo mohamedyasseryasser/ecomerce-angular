@@ -1,0 +1,17 @@
+<div class="wrapper fadeInDown zero-raduis">
+    <div id="formContent">
+      <div class="fadeIn first">
+        <h2 class="my-5">login</h2>
+      </div>
+      <form [formGroup]="formgroup">
+        <input  type="email" id="email" class="fadeIn second zero-raduis" name="email" formControlName="email" placeholder="name@example.com">
+        <input   id="password" class="fadeIn third zero-raduis" name="login" formControlName="password" placeholder="password">
+        <div id="formFooter">
+          
+        </div>
+        <button class="btn" (click)="submit()"> submit</button>
+        
+        <a  routerLink="/register" class="register" >create account</a>
+      </form>
+    </div>
+  </div>  

@@ -1,0 +1,9 @@
+<div class="width:100% ">
+  <div class="input"><input type="text" [(ngModel)]="searchText" (input)="search()" placeholder="Search..."></div>
+  <div class="container row text-center">
+  <div class="card col-lg-4" *ngFor="let item of catdata" style="width: 18rem;">
+  <app-product1 [data]="item" (prodetails) = change($event)></app-product1>
+  </div>
+  </div>
+  </div>
+    

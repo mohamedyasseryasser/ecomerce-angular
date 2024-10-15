@@ -1,0 +1,7 @@
+400==>incorrect data body
+401==>un authorized
+403==>cors origin  
+404==>incorrect path 
+409==>dublicated paramerts
+500==>internet server error
+202==>success

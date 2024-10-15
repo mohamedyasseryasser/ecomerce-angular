@@ -1,0 +1,20 @@
+ 
+
+<div class="productdetails" *ngIf="loading">
+<div class="container row">
+  <div class="card-img" > <img src="{{currentdata.image}}"  alt="">
+  </div>
+  <div class="card-body ">
+    <div class="title"><SPAN>title</SPAN> :  {{currentdata.title}}</div>
+  <div class="cat"><SPAN>catogary</SPAN> :  {{currentdata.category}}</div>
+  <div class="disc"><SPAN>discription</SPAN> :  {{currentdata.description}}</div>
+  <div class="rate"><SPAN>rate</SPAN> :   {{currentdata.rating.rate}}</div>
+  <div class="count"><SPAN>count</SPAN> :  {{currentdata.rating.count}}</div>
+  <div class="price"><SPAN>price</SPAN> :  {{currentdata.price}}</div>
+  </div>
+  
+</div>
+</div>
+<div *ngIf="!loading">
+  <app-loading></app-loading>
+</div>

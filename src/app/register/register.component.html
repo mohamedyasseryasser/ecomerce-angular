@@ -1,0 +1,29 @@
+<div class="wrapper fadeInDown zero-raduis">
+    <div id="formContent">
+        <!-- Tabs Titles -->
+
+        <!-- Icon -->
+        <div class="fadeIn first"> 
+            <!-- <img src="http://danielzawadzki.com/codepen/01/icon.svg" id="icon" alt="User Icon" /> -->
+            <h2 class="my-5">REGISTER</h2>
+        </div>
+
+        <!-- Login Form -->
+        <form [formGroup]="formgroup">
+
+            <input type="text" formControlName="fname" id="firstName" class="fadeIn second zero-raduis" name="firstName" placeholder="Ad">
+            
+            <input type="text" formControlName="lname" id="lastName" class="fadeIn second zero-raduis" name="lastName" placeholder="Soyad">
+            
+            <input type="email" formControlName="email" id="email" class="fadeIn second zero-raduis" name="email" placeholder="info@example.com">
+            
+            <input  type="password" formControlName="password" id="password" class="fadeIn third zero-raduis" name="register" placeholder="password">
+          
+                <div id="formFooter">
+                </div>
+            <input   type="submit" class="fadeIn fourth zero-raduis" value="submit " (click)="submit()">
+            
+            <input type="button" class="fadeIn fourth zero-raduis pc" value="I have account" (click)="login()">
+        </form>
+    </div>
+</div> 

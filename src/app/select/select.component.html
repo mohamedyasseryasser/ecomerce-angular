@@ -1,0 +1,9 @@
+
+<div class="search py-4">
+  <label for="search">{{title}}</label>
+  <select class="form-control"  [(ngModel)]="selectbydata"  (change)="changes($event)" id="search">
+    <option value="all" selected >All</option>
+    <option  *ngFor="let item of data let i=index" value="{{item}}">{{item}}</option>
+  </select>
+ </div>
+ 

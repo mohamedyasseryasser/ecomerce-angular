@@ -1,0 +1,35 @@
+input{
+width: 25%;
+margin-left: 12%;
+transition: all .5s ease-in-out;
+border: none;
+border: 2px solid #ddd;
+border-radius: 30px;
+padding: 5px;
+}
+.input{
+    width: 90%;
+    margin: 30px; 
+}
+input:focus{
+   
+    outline: none;
+}
+input:active{
+    transform: scale(1.5);
+
+}
+ .container{
+    position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+ }
+ .card{
+    margin: 0 0 20px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all .3s;
+ }
+ .card:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+ }

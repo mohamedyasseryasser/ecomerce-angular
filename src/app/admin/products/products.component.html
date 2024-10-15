@@ -1,0 +1,104 @@
+<div class="products">
+  <div class="container">
+    <button type="button" class="btn btn-success" data-bs-toggle="modal" (click)="open()" data-bs-target="#exampleModal">
+      add product
+    </button>
+    <hr>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" style="max-width: 70%;">
+        <div class="modal-content">
+          <div class="container">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+              <form [formGroup]="formgroup">
+                <div class="container " style="max-width: 100%;">
+                  <div class="row" style="max-width: 90%;">
+
+                  
+                    <div class="col-lg-4">
+                      <label for="title">Title</label>
+                      <input type="text" formControlName="title" id="title" placeholder="Title" class="form-control">
+                    </div>
+
+                    <div class="col-lg-4">
+                      <label for="price">Price</label>
+                      <input type="text" placeholder="Price" formControlName="price" id="price" class="form-control">
+                    </div>
+
+                    <div class="col-lg-4">
+                      <label for="category">Category</label>
+                      <select class="form-control" formControlName="category" (change)="getallcatqoary()" id="search">
+                        <option value="all" selected>All</option>
+                        <option *ngFor="let item of cats let i=index" value="{{item}}">{{item}}</option>
+                      </select>
+                    </div>
+                  </div>
+
+                
+                  <div class="row mt-3" style="max-width: 90%;">
+                  
+                    <div class="col-lg-4">
+                      <label for="inputGroupFile04">Upload Image</label>
+                      <div class="input-group">
+                        <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                        <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Upload</button>
+                      </div>
+                    </div>
+                    <div class="col-lg-8">
+                      <label for="description">Description</label>
+                      <input type="text" placeholder="Description" formControlName="description" id="description" class="form-control">
+                    </div>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="col-lg-12">
+                      <button type="submit" (click)="addproduct()" class="btn btn-danger">Submit</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div> 
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+ 
+    <div class="container row">
+     <table class="table">
+      <thead>
+        <tr class="text-center">
+          <th scope="col"></th>
+          <th scope="col">name</th>
+          <th scope="col">catogary</th>
+          <th scope="col">price</th>
+          <th scope="col"></th>
+        </tr> 
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of  user" class="text-center">
+          <td><img [src]="item.image" alt=""></td>
+          <td>{{item.title}}</td>
+          <td>{{item.category}}</td>
+          <td>{{item.price}}
+          </td>
+          <td>
+            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="updateproduct(item)">
+              update
+            </button>
+          </td>
+        </tr>
+      </tbody>
+     </table>
+    </div>
+  </div>
+</div>
+ 

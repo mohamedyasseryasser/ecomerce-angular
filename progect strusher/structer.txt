@@ -1,0 +1,20 @@
+-products{
+  components:
+    -all products
+    -products details
+   services:
+     -product.services
+}
+-carts{
+  components:
+    -all carts
+  services:
+    -carts.services
+}
+-shared{
+  components:
+   -navbar
+   -select
+  services:
+   -shared.services
+}
