@@ -21,7 +21,7 @@ this.prodetails.emit({item:this.data,quantity:this.inputValue})
 }
 buy(){
   this.loading=false
-}
+} 
 
 }
  

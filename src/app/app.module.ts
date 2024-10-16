@@ -13,7 +13,7 @@ import { SelectComponent } from './select/select.component';
 import { HomeComponent } from './home/home.component';
 import { LoadingComponent } from './loading/loading.component';
 import { Product1Component } from './product1/product1.component';
-import { ElectronicesComponent } from './electronices/electronices.component';
+
 import { JeweleryComponent } from './jewelery/jewelery.component';
 import { MenscolthesComponent } from './menscolthes/menscolthes.component';
 import { WomanclothesComponent } from './womanclothes/womanclothes.component';
@@ -46,7 +46,7 @@ import { authGuard } from './auth.guard';
     HomeComponent,
     LoadingComponent,
     Product1Component,
-    ElectronicesComponent,
+  
     JeweleryComponent,
     MenscolthesComponent,
     WomanclothesComponent,

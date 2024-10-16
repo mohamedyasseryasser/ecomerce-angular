@@ -7,7 +7,7 @@ import { SelectComponent } from './select/select.component';
 import { AllproductsComponent } from './allproducts/allproducts.component';
 import { LoadingComponent } from './loading/loading.component';
 import { HeaderComponent } from './header/header.component';
-import { ElectronicesComponent } from './electronices/electronices.component';
+
 import { JeweleryComponent } from './jewelery/jewelery.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
@@ -29,7 +29,7 @@ const routes: Routes = [
         
       { path: 'productdetails/:id', component: ProductdetailsComponent },
       { path: 'select', component: SelectComponent },
-      { path: 'electronices', component: ElectronicesComponent },
+      
       { path: 'jewelery', component: JeweleryComponent },
       {path:'orders',component:ProductsComponent},
       {path:'cartsadmin',component:CartsadminComponent},
